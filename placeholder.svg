@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 400" width="100%" height="100%">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00274C" />
+      <stop offset="100%" stop-color="#001224" />
+    </linearGradient>
+    
+    <!-- Maize Accent Gradient -->
+    <linearGradient id="maizeGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFE052" />
+      <stop offset="100%" stop-color="#FFCB05" />
+    </linearGradient>
+
+    <!-- Subtle Grid Pattern for Sports Tech feel -->
+    <pattern id="grid" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="#ffffff" stroke-width="1" stroke-opacity="0.03"/>
+    </pattern>
+
+    <!-- Drop Shadow for Block M -->
+    <filter id="dropShadow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.5" />
+    </filter>
+  </defs>
+
+  <!-- Background Rect -->
+  <rect width="300" height="400" fill="url(#bgGrad)" />
+  
+  <!-- Overlay Sports Tech Grid -->
+  <rect width="300" height="400" fill="url(#grid)" />
+
+  <!-- Diagonal Maize Accent Line -->
+  <path d="M -50 350 L 350 250 L 350 260 L -50 360 Z" fill="url(#maizeGrad)" opacity="0.15" />
+  <path d="M -50 330 L 350 230 L 350 236 L -50 336 Z" fill="url(#maizeGrad)" opacity="0.1" />
+
+  <!-- Center Circle Base -->
+  <circle cx="150" cy="180" r="75" fill="#001830" stroke="url(#maizeGrad)" stroke-width="3" filter="url(#dropShadow)" />
+
+  <!-- Stylized Football Graphic (Logo replacement) -->
+  <path d="M 120,180 Q 150,135 180,180 Q 150,225 120,180 Z" fill="url(#maizeGrad)" filter="url(#dropShadow)" />
+  <path d="M 130,180 L 170,180 M 140,173 L 140,187 M 150,173 L 150,187 M 160,173 L 160,187" stroke="#00274C" stroke-width="2.5" stroke-linecap="round" />
+
+  <!-- Title Text -->
+  <text x="150" y="305" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="14" font-weight="800" fill="#ffffff" letter-spacing="3" text-anchor="middle" opacity="0.9">
+    MICHIGAN
+  </text>
+  <text x="150" y="325" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="11" font-weight="700" fill="url(#maizeGrad)" letter-spacing="4" text-anchor="middle">
+    FOOTBALL
+  </text>
+
+  <!-- Roster Card Text -->
+  <text x="150" y="360" font-family="'Outfit', 'Inter', system-ui, sans-serif" font-size="10" font-weight="500" fill="#ffffff" opacity="0.4" text-anchor="middle" letter-spacing="1">
+    PHOTO NOT AVAILABLE
+  </text>
+</svg>
